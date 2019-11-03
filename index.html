@@ -1,0 +1,193 @@
+<!--
+ * @Description: 
+ * @Author: you-know-who-2017
+ * @Github: https://github.com/you-know-who-2017
+ * @Date: 2019-11-03 10:23:42
+ * @LastEditors: you-know-who-2017
+ * @LastEditTime: 2019-11-03 15:57:06
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>canvas and svg</title>
+    <meta name="description" content="fill">
+	<meta name="geek" content="you-know-who-2017">
+	<link rel="icon" type="image/x-icon" href="resource/bitbug_favicon.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/svg.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron card card-block">
+				<h2>
+					Hello, world!
+				</h2>
+				<p>
+						Hello, World 最早是由 Brian Kernighan 创建的。<br />
+						1978年，Brian Kernighan 写了一本名叫《C 程序设计语言》的编程书，在程序员中广为流传。<br />
+						他在这本书中第一次引用的 Hello World 程序，源自他在1973年编写的一部讲授 B 语言的编程教程 <br />
+				</p>
+					<!-- 实际上下面的是b语言 emmmmm 好像没有高亮的方式 就c了-->
+					<pre><code class="c">
+main(){
+	extrn a,b,c;
+	putchar(a); putchar(b); putchar(c); putchar('!*n');
+	}
+	
+	a 'hell';
+	b 'o, w';
+	c 'orld';
+					</code></pre>
+				<p>
+					<a class="btn btn-primary btn-large" href="http://blog.fujiji.com/the-history-of-hello-world/">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+
+		<div class="loader loader--style3" title="圆形">
+		<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+		<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+		  <animateTransform attributeType="xml"
+			attributeName="transform"
+			type="rotate"
+			from="0 25 25"
+			to="360 25 25"
+			dur="0.6s"
+			repeatCount="indefinite"/>
+		  </path>
+		</svg>
+	  </div>
+
+	  <div class="loader loader--style4" title="条状1">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+		  <rect x="0" y="0" width="4" height="7" fill="#333">
+			<animateTransform  attributeType="xml"
+			  attributeName="transform" type="scale"
+			  values="1,1; 1,3; 1,1"
+			  begin="0s" dur="0.6s" repeatCount="indefinite" />       
+		  </rect>
+	  
+		  <rect x="10" y="0" width="4" height="7" fill="#333">
+			<animateTransform  attributeType="xml"
+			  attributeName="transform" type="scale"
+			  values="1,1; 1,3; 1,1"
+			  begin="0.2s" dur="0.6s" repeatCount="indefinite" />       
+		  </rect>
+		  <rect x="20" y="0" width="4" height="7" fill="#333">
+			<animateTransform  attributeType="xml"
+			  attributeName="transform" type="scale"
+			  values="1,1; 1,3; 1,1"
+			  begin="0.4s" dur="0.6s" repeatCount="indefinite" />       
+		  </rect>
+		</svg>
+	  </div>
+
+<div class="loader loader--style5" title="条状2">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+		  <rect x="0" y="0" width="4" height="10" fill="#333">
+			<animateTransform attributeType="xml"
+			  attributeName="transform" type="translate"
+			  values="0 0; 0 20; 0 0"
+			  begin="0" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		  <rect x="10" y="0" width="4" height="10" fill="#333">
+			<animateTransform attributeType="xml"
+			  attributeName="transform" type="translate"
+			  values="0 0; 0 20; 0 0"
+			  begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		  <rect x="20" y="0" width="4" height="10" fill="#333">
+			<animateTransform attributeType="xml"
+			  attributeName="transform" type="translate"
+			  values="0 0; 0 20; 0 0"
+			  begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		</svg>
+	  </div>
+<div class="loader loader--style6" title="条状3">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+		  <rect x="0" y="13" width="4" height="5" fill="#333">
+			<animate attributeName="height" attributeType="XML"
+			  values="5;21;5" 
+			  begin="0s" dur="0.6s" repeatCount="indefinite" />
+			<animate attributeName="y" attributeType="XML"
+			  values="13; 5; 13"
+			  begin="0s" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		  <rect x="10" y="13" width="4" height="5" fill="#333">
+			<animate attributeName="height" attributeType="XML"
+			  values="5;21;5" 
+			  begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+			<animate attributeName="y" attributeType="XML"
+			  values="13; 5; 13"
+			  begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		  <rect x="20" y="13" width="4" height="5" fill="#333">
+			<animate attributeName="height" attributeType="XML"
+			  values="5;21;5" 
+			  begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+			<animate attributeName="y" attributeType="XML"
+			  values="13; 5; 13"
+			  begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+		  </rect>
+		</svg>
+	  </div>
+	  	<p>
+			  SVG具体动画效果 可以查看<a href="https://www.jianshu.com/p/a3d66a920245">教程（只是认识上的）</a>
+		  </p>
+		</div>
+		<div class="col-md-6 card card-block">
+						<h2>
+							CANVAS
+						</h2>
+						<p>
+							canvas效果，相对来说比较简陋的外观，不过还是比较Geek，RGB的例子有很多，等于造了一个轮子
+						</p>
+						<p>
+							<a class="btn btn-primary btn-large" href="canvas_demo.html">点我跳转</a>
+						</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<img alt="Bootstrap Image Preview" src="resource/me.png" width=100px height=100px style="float: left;">
+			<dl style="float: right;">
+				<dt>
+					Description
+				</dt>
+				<dd>
+					一个喜欢计算机程序的人
+				</dd>
+				<dt>
+					My Github
+				</dt>
+				<dd>
+					<a href="https://github.com/you-know-who-2017">欢迎多多交流</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
